@@ -72,7 +72,7 @@ hitBtn.onclick=function(){
     topCard.innerHTML+='<img src="./poker-qr/'+s+'.svg" alt="card">';
     setTimeout(() => {
         playerDeck.innerHTML+='<img src="./poker-qr/'+s+'.svg" alt="card">';
-    }, 500);
+    }, 100);
     sum+=val;
     if(sum===21){
         won();
@@ -110,7 +110,7 @@ standBtn.onclick=function(){
             topCard.innerHTML="";
             topCard.innerHTML+='<img src="./poker-qr/'+s+'.svg" alt="card">';
             dealerDeck.innerHTML+='<img src="./poker-qr/'+s+'.svg" alt="card">';
-        }, 100);
+        }, 50);
         if(dealerA>0){
             if(dealerSum+10 ==21){
                 lost();
